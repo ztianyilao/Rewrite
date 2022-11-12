@@ -1,0 +1,30 @@
+// ==UserScript==
+// @ScriptName        Quan Crack 脚本
+// @Author            Cuttlefish
+// @TgChannel         https://t.me/ddgksf2021
+// @Contribute        https://t.me/ddgksf2013_bot
+// @Feedback          📮 ddgksf2013@163.com 📮
+// @WechatID          公众号墨鱼手记
+// @UpdateTime        2022-10-30
+// @Explain           ⛔本着不方便大家的原则请自行添加Hostname⛔
+// @ScriptTime        若脚本失效可抓取对应时间的旧版本应用
+// @Attention         🟢：有效   🔴：失效
+// @CollectApp        https://docs.qq.com/sheet/DYmRTQXpVY0hNcGls?tab=BB08J2
+// @ForHelp           若有Crack的需求，可在上面腾讯文档提交app名称
+// @Icon              ✅  🔓  🚫  ❌ 
+// @ScriptURL         https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/UnlockApp.conf
+// ==/UserScript==
+
+
+# > 110 百度文库☆解锁VIP文档阅读权限（2022-10-17）@ddgksf2013
+^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/baidulibrary.js
+# > 100 BiliBili 解锁1080P高码率+4K畫質(番劇和影視除外)（2022-03-05）@ddgksf2013
+^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\? url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/bilibili_json.js
+# > 099 SpotifyPro（2022-02-15）@app2smile
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+# > 096 百度云（2021-07-05）@ddgksf2013
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/bdcloud.js
+# > 066 酷我音乐解除下载权限 (2022-01-25) by ddgksf2013
+^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver=\d url script-request-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/kuwodl.js
+# > 044 百度云（2021-03-10） by ddgksf2013
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/bdcloud.js
